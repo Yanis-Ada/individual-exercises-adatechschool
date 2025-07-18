@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeu des Allumettes</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+
+</head>
+<body>
+  <!-- Conteneur principal pour centrer et structurer tout le contenu de la page -->
+  <div class="container">
+    <h1>🔥 Jeu des Allumettes</h1>
+
+    <!-- Zone de configuration (nombre de joueurs) -->
+    <div id="setup">
+      <p>Combien de joueurs ? (minimum 2)</p>
+      <input type="number" id="playerCount" min="2" />
+
+      <!-- Bouton pour lancer la partie après avoir saisi le nombre de joueurs -->
+      <button id="startBtn">Démarrer</button>
+    </div>
+
+    <!-- Bloc masqué par défaut, qui s’affiche une fois que la partie commence -->
+    <div id="gameplay" style="display: none;">
+      <p id="info"></p>
+      <input type="number" id="matchstickInput" placeholder="Nombre d’allumettes à retirer (1-6)" />
+
+      <!-- Bouton pour valider le tour du joueur courant -->
+      <button id="playBtn">Jouer</button>
+
+      <!-- Message d'erreur affiché si trop d'allumettes sont reitrées -->
+      <p id="error-message" class="error-message"></p>
+
+    </div>
+  </div>
+
+</body>
+</html>
