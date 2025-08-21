@@ -43,8 +43,3 @@ git clone https://github.com/Yanis-Ada/Exercices_individuels.git
 
 # Navigate into the project folder
 cd Exercices_individuels
-
-# Open an exercise folder of your choice
-cd 03_Guess_a_number
-
-# Open index.html in your browser or run with Live Server
