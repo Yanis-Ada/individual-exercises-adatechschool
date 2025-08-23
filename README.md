@@ -15,10 +15,10 @@ You can also access all exercises through the homepage index (https://yanis-ada.
 
 ## Technologies Used
 
-- **Git & GitHub** → version control and repository hosting  
-- **JavaScript** → programming language for exercises  
-- **HTML & CSS** → structure and styling for web projects  
-- **SQLite** → relational database for SQL exercises  
+- **Git & GitHub** 
+- **JavaScript** 
+- **HTML & CSS**  
+- **SQLite** 
 
 ---
 
