@@ -9,7 +9,7 @@ Each folder contains a specific exercise focused on programming fundamentals, pr
 
 The repository is organized by numbered folders, each representing one exercise
 
-You can also access all exercises through the homepage index (https://yanis-ada.github.io/Exercices_individuels/).
+You can also access all exercises through the homepage index https://yanis-ada.github.io/individual-exercises-adatechschool.
 
 ---
 
