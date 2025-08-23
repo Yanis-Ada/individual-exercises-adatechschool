@@ -1,0 +1,85 @@
+/* ===== Design tokens (rem only) ===== */
+:root{
+  --panel-bg:#ffebec;            /* rose pâle */
+  --ink:#1f2937;                 /* texte principal */
+  --muted:#6b7280;               /* texte secondaire */
+  --border:#e5e7eb;              /* bordure douce */
+  --radius-xl:1.75rem;           /* 28px */
+  --shadow-xl:0 1.25rem 3.75rem rgba(31,41,55,.10); /* 0 20px 60px */
+}
+
+/* ===== Base ===== */
+html{height:100%;font-size:100%;}
+body{
+  height:100%;
+  margin:0;
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,Inter,Arial,sans-serif;
+  color:var(--ink);
+  background:#ffffff;            /* extérieur blanc */
+  line-height:1.6;
+}
+
+/* ===== Grand carré rose arrondi ===== */
+.panel{
+  width:100%;
+  max-width:68.75rem;            /* 1100px */
+  margin:1.5rem auto;            /* 24px top/bottom */
+  background:var(--panel-bg);
+  border-radius:var(--radius-xl);
+  box-shadow:var(--shadow-xl);
+  overflow:hidden;
+  min-height:32.5rem;            /* 520px */
+}
+.panel__inner{ padding:2rem; }
+
+/* ===== Layout interne (flex robuste) ===== */
+.layout{
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  gap:1.25rem;                   /* 20px */
+}
+
+/* Colonne centrale = contenu */
+.content{ flex:1 1 auto; min-width:0; }
+
+/* ===== Typo & liste ===== */
+.content h1{ margin:0 0 .5rem; font-size:2.125rem; }   /* 34px */
+.content p{ margin:0 0 .75rem; color:var(--muted); }   /* 12px */
+.content ul{
+  list-style:none; padding:0; margin:0;
+  border:.0625rem solid var(--border);  /* 1px */
+  border-radius:.875rem;                 /* 14px */
+  background:#fff; overflow:hidden;
+}
+.content li+li{ border-top:.0625rem solid var(--border); }
+.content a{
+  display:block; padding:.625rem .75rem; /* 10px 12px */
+  color:var(--ink); text-decoration:none;
+}
+.content a:hover{ background:#fafafa; }
+
+/* ===== Photos latérales (taille FIXE) ===== */
+.side-img{
+  flex:0 0 12rem;                /* largeur fixe ~192px */
+  width:12rem;
+  height:18rem;                  /* hauteur fixe ~288px */
+  object-fit:cover;              /* recadre proprement dans le cadre */
+  object-position:center;
+  border-radius:1rem;            /* 16px */
+  background:#fff;
+  border:.0625rem solid var(--border);
+}
+
+/* ===== Mobile : empile, photos optionnelles ===== */
+@media (max-width:47.5rem){      /* 760px */
+  .layout{ flex-direction:column; align-items:center; }
+  .side-img{ display:none; }     /* retire cette ligne si tu veux les garder en mobile */
+}
+
+/* ===== Footer ===== */
+footer{
+  text-align:center;
+  color:var(--muted);
+  padding:1rem 0 1.75rem;        /* 16px 0 28px */
+}
