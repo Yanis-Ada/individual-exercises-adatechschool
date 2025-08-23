@@ -41,5 +41,3 @@ If you want to run the exercises locally:
 # Clone the repository
 git clone https://github.com/Yanis-Ada/Exercices_individuels.git
 
-# Navigate into the project folder
-cd Exercices_individuels
